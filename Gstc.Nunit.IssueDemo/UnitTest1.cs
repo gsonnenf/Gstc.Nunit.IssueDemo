@@ -3,10 +3,11 @@ using AutoFixture;
 using NUnit.Framework;
 
 namespace Gstc.Nunit.IssueDemo {
-    
+
     /// <summary>
     /// Test demonstrating randomly generated TestCaseSources don't display as ran MS Test Runner, but do in Resharper Test Runner.
     /// </summary>
+    [TestFixture]
     public class Tests {
         static readonly Fixture _fixture  = new();
         static readonly Random _random = new();
